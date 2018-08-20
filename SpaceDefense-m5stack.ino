@@ -190,8 +190,8 @@ int getAccel(char axis) {
         IMU.ax = (float)IMU.accelCount[0] * IMU.aRes * 1000;
         return IMU.ax;
       case 'Y':
-        IMU.ax = (float)IMU.accelCount[1] * IMU.aRes * 1000;
-        return IMU.ax;
+        IMU.ay = (float)IMU.accelCount[1] * IMU.aRes * 1000;
+        return IMU.ay;
       case 'Z':
         IMU.az = (float)IMU.accelCount[2] * IMU.aRes * 1000;
         return IMU.az;
